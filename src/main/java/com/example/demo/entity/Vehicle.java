@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import jakarta.persistence.
+
 @Entity
 @Table(name = "vehicle")
 public class Vehicle {
