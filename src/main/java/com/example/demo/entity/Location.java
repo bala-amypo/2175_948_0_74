@@ -38,5 +38,25 @@ public class Location {
     public String getName(){
         return name;
     }
-    
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public Double getLat(){
+        return latitude;
+    }
+
+    public void setLat(Double latitude){
+        this.latitude = latitude;
+    }
+
+    public Double getLon(){
+        return longtitude;
+    }
+
+    public void setLon(Double longtitude){
+        this.longtitude = longtitude;
+    }
+
 }
