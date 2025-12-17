@@ -1,11 +1,18 @@
 package com.example.demo.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
+
 @Entity
 @Table(name = "users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;
@@ -15,15 +22,16 @@ public class User {
     private String password;
     private String role;
 
-    User(){}
+    public User(){}
 
-    User(int id, String name , String email, String password , String role){
+    public User(int id, String name , String email, String password , String role){
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
         this.role = role;
     }
+
     public int getId(){
         return id;
     }
@@ -61,11 +69,8 @@ public class User {
     }
 
     public void setRole(String role){
-        this.role
+        this.role = role;
     }
-
-
-
 
 
 }
