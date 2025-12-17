@@ -21,5 +21,22 @@ public class Location {
 
     public Location() {}
 
-    public Location(String name, )
+    public Location(String name, Double latitude , Double longtitude ){
+        this.name = name;
+        this.latitude = latitude;
+        this.longtitude = longtitude;
+    }
+
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+    
 }
