@@ -46,7 +46,23 @@ public class Vehicle {
     this.user = user;
    }
 
-   public String get
+   public String getVehicleNumber(){
+    return vehicleNumber;
+   }
+
+   public void setVehicleNumber(String vehicleNumber){
+    this.vehicleNumber = vehicleNumber;
+   }
+
+   public Double getCapacityKg(){
+    return capacityKg;
+   }
+
+   public void setCapacityKg(Double capacityKg){
+    this.capacityKg = capacityKg;
+   }
+
+   public get
 
    
 
