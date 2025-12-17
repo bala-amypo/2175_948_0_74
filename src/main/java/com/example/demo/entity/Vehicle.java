@@ -5,8 +5,10 @@ package com.example.demo.entity;
 public class Vehicle {
 
    @Id
-   
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
    private int id;
+
+   
 
 
 
