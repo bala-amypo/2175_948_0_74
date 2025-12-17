@@ -1,9 +1,15 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "vehicle")
+@Table(
+    name = "vehicles",
+    uniqueConstraints = {
+        @UniqueConstraints(columnNames = "vehicle_number")
+    }
+  
+)
 public class Vehicle {
 
    @Id
