@@ -15,6 +15,29 @@ public class User {
     private String password;
     private String role;
 
+    public int getId(){
+        return id;
+    }
 
-    
+    public void setId()
+
+    public String getName(){
+        return name;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public String getRole(){
+        return role;
+    }
+
+
+
+
 }
